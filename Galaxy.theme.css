@@ -47,10 +47,6 @@
     background-size: cover;
 }
 
-.theme-dark .container-3gCOGc {
-    background-color: var(--bgImage);
-}
-
 /* Table of Contents
     ======== STATIC ==========
  1. Title Bar
@@ -5698,4 +5694,12 @@ div.reply-item {
         z-index: 2 !important;
     }
 
+}
+
+.theme-dark .container-3gCOGc {
+    background-color: var(--bgImage);
+}
+
+.theme-light .container-3gCOGc {
+    background-color: var(--bgImage);
 }
