@@ -274,14 +274,14 @@
 }
 
 .messages-3amgkR {
-    background-color: var(--BG-right-brightness); 
+    background-color: var(--bgImage); 
 }
 	
 .scroller-2TZvBN {
-    background-color: var(--BG-left-brightness);
+    background-color: var(--bgImage);
 }
 .container-21gZY8 {
-	background-color: var(--BG-popout-brightness);
+	background-color: var(--bgImage);
 }	
 
 .theme-neutron {
@@ -292,5 +292,5 @@
 }
 
 .sidebar-2K8pFh {
-	background: var(--BG-left-brightness);
+	background: var(--bgImage);
 }
