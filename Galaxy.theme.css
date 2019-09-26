@@ -34,7 +34,7 @@
     --alert-display: block;
     --accent: var(--main-color);
     --bgImage: url('https://i.imgur.com/LnsjwKk.jpg');
-    --BG-image-set: var(--BG-image, var(--bgImage));
+    --BG-image-set: var(--bgImage, var(--bgImage));
     --HomeButtonImg:url("https://media.discordapp.net/attachments/603839638570008576/616050989954367514/Continuum.png"); /* Home Button Image url must end with .jpg or .png */
 }
 
