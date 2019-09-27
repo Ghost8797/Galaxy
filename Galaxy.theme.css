@@ -1,8 +1,22 @@
+/**
+ * @name         Galaxy
+ * @description  
+ * @author       Ghost8797#4706
+ * @version      1.0
+ * @source       
+ * @website      
+ */
+
 /* Imports */
 @import "https://fonts.googleapis.com/css?family=Satisfy|Montserrat:300";
 @import "https://monstrousdev.github.io/themes/addons/user-tags.css";
 @import "https://monstrousdev.github.io/themes/addons/filter.css";
 @import "https://www.themonster.xyz/styles/google-fonts.css";
+@import "https://monstrousdev.github.io/themes/addons/libraryGrid.css";
+@import "https://monstrousdev.github.io/themes/addons/chatBubbles.css";
+@import "https://monstrousdev.github.io/themes/addons/categoryNameFlair.css";
+@import "https://monstrousdev.github.io/themes/addons/minimalUserList.css";
+@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
 
 /* Variables */
 :root {
@@ -24,7 +38,8 @@
     --accent: var(--main-color);
     --bgImage: url('https://i.imgur.com/LnsjwKk.jpg');
     --BG-image-set: var(--bgImage, var(--bgImage));
-    --HomeButtonImg:url("https://media.discordapp.net/attachments/603839638570008576/616050989954367514/Continuum.png"); /* Home Button Image url must end with .jpg or .png */
+    --HomeButtonImg: url("https://media.discordapp.net/attachments/603839638570008576/616050989954367514/Continuum.png");
+    /* Home Button Image url must end with .jpg or .png */
 }
 
 /* Background Settings */
@@ -34,7 +49,89 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
 }
+
+.content-yTz4x3 {
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* #channel Roundness */
+#app-mount .chat-3bRxxu .wrapper-3WhCwL {
+    border-radius: 4px;
+}
+
+/* Backdrop Spacer */
+#app-mount .chat-3bRxxu,
+.contentRegion-3nDuYy,
+.sidebarRegion-VFTUkN {
+    border-radius: var(--roundness) !important;
+}
+
+#app-mount .sidebar-2K8pFh {
+    border-radius: 0 var(--roundness) var(--roundness) 0 !important;
+    margin-right: 25px;
+}
+
+#app-mount .layer-3QrUeG[aria-label*="SETTINGS"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN {
+    margin-right: 25px;
+}
+
+.sidebar-CFHs9e {
+    width: 218px;
+    padding: 60px 6px 60px 20px;
+}
+
+.da-sidebarRegion {
+    margin-right: 25px;
+}
+
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN,
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP {
+    justify-content: flex-start;
+    min-width: 225px;
+}
+
+.standardSidebarView-3F1I7i,
+.standardSidebarView-3F1I7i * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sidebarRegion-VFTUkN {
+    -ms-flex: 0;
+    -ms-flex-pack: end;
+    flex: .3;
+}
+
+.standardSidebarView-3F1I7i .contentColumn-2hrIYH,
+.standardSidebarView-3F1I7i .customColumn-Rb6toI {
+    -ms-flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 460px;
+}
+
+.standardSidebarView-3F1I7i .contentColumnDefault-1VQkGM {
+    padding: 20px 40px 80px;
+}
+
+/* Friends Area Roundness Fix */
+#app-mount .container-3gCOGc {
+    border-radius: var(--roundness) var(--roundness) !important;
+}
+
+
+/* Backdrop Spacer */
+
+/* #channel Roundness */
 
 /* Table of Contents
     ======== STATIC ==========
@@ -497,7 +594,7 @@ svg[name="Activity"] {
 }
 
 #app-mount .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
-    background-color: transparent;
+    background-color: var(--BG-image-set);
 }
 
 .search-2oPWTC .DraftEditor-root {
@@ -505,7 +602,7 @@ svg[name="Activity"] {
 }
 
 #app-mount .container-cMG81i {
-    background-color: transparent;
+    background-color: var(--BG-image-set);
 }
 
 .search .searchBarIcon-1J6sKG {
@@ -513,7 +610,7 @@ svg[name="Activity"] {
 }
 
 .searchBarTag-2xRzm8 {
-    background: transparent !important;
+    background-color: var(--BG-image-set);
     border: 1px solid var(--main-color);
 }
 
@@ -523,7 +620,7 @@ svg[name="Activity"] {
 }
 
 .search-2oPWTC .searchBar-3dMhjb {
-    background-color: transparent !important;
+    background-color: var(--BG-image-set);
     height: 46px;
     border-radius: 0px;
 }
@@ -531,11 +628,11 @@ svg[name="Activity"] {
 .titleCall-_b9o8p .search .search-bar,
 .searchBar-2_Yu-C,
 .searchBar-2_Yu-C .searchBarInner-1_Tg2R {
-    background-color: transparent !important;
+    background-color: var(--BG-image-set);
 }
 
 .search-bar .search-bar-inner {
-    background: transparent;
+    background-color: var(--BG-image-set);
     border-color: transparent;
 }
 
@@ -871,7 +968,7 @@ svg[name*="Checkmark"] {
 
 .premiumIndicator-1XvbfM,
 .standardSidebarView-3F1I7i #editor-detached button {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .standardSidebarView-3F1I7i .contentRegionScroller-26nc1e .tools-3-3s-N {
@@ -927,7 +1024,7 @@ svg[name*="Checkmark"] {
 }
 
 .selected-mKYnfr.option-n0icdO {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     border-color: var(--main-color);
 }
 
@@ -1036,7 +1133,7 @@ svg[name*="Checkmark"] {
 
 #app-mount .acronym-2mOFsV:hover {
     border: none;
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .item-2hkk8m[style*="opacity: 0.7"] {
@@ -1085,9 +1182,7 @@ svg[name*="Checkmark"] {
     background: var(--dnd) !important;
 }
 
-.wrapper-2B2Wx1 {
-    
-}
+.wrapper-2B2Wx1 {}
 
 #app-mount .folder-21wGz3,
 #app-mount .expandedFolderBackground-2sPsd- {
@@ -1110,7 +1205,7 @@ svg[name*="Checkmark"] {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     opacity: .2;
     transition: all 200ms ease-in-out;
 }
@@ -1134,7 +1229,7 @@ svg[name*="Checkmark"] {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     opacity: .2;
 }
 
@@ -1148,7 +1243,7 @@ svg[name*="Checkmark"] {
 
 /* 4.c. Guilds Add */
 #app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN .circleIconButton-jET_ig {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     color: white;
 }
 
@@ -1178,12 +1273,12 @@ svg[name*="Checkmark"] {
 
 .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN .circleIconButton-jET_ig {
     box-shadow: 0 10px 15px rgba(0, 0, 0, .4), 0 -1px 0px rgba(0, 0, 0, 0.2) inset, 0 2px 1px rgba(255, 255, 255, 0.2) inset;
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN > div.container-1ETFDs:first-child .badge-14ZoDd {
     border-radius: 40px;
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     margin-bottom: 0px;
     margin-right: 10px;
     border: 2px solid var(--hover-color);
@@ -1196,7 +1291,7 @@ svg[name*="Checkmark"] {
 
 /* 4.d. Badges */
 #app-mount .iconBadge-2wi9r4 {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 /* 4.e. Unread Indicator */
@@ -1209,7 +1304,7 @@ svg[name*="Checkmark"] {
 }
 
 .mention-1f5kbO {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .mention-1f5kbO:hover {
@@ -1422,7 +1517,7 @@ svg[name*="Checkmark"] {
 }
 
 .channelNotices-41mJbj .channelNotice-1-XFjC .message-3SOT5P .btn-11C5_u {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     border-color: var(--main-color);
     transition: all .2s ease-in-out;
 }
@@ -1487,11 +1582,11 @@ svg[name*="Checkmark"] {
 
 .unread-1xRYoj:hover,
 .unreadBar-3YD_k9 {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .unread-1xRYoj.mention-1f5kbO {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .unreadBar-3YD_k9.mention-1f5kbO:hover {
@@ -1742,7 +1837,7 @@ a,
     -webkit-mask-size: 95%;
     -webkit-mask-position: center;
     -webkit-mask-repeat: no-repeat;
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     background-image: none !important;
 }
 
@@ -2217,28 +2312,28 @@ pre {
 }
 
 .searchResultsWrap-2DKFzt .searchHeader-1l-wpR {
-    background-color: var(--quaternary-color) !important;
+    background-color: var(--BG-image-set);
 }
 
 .searchResultsWrap-2DKFzt .searchResult-3pzFAB:before {
-    background-image: linear-gradient(0deg, rgba(47, 49, 54, 0), var(--primary-color)) !important;
+    background-image: linear-gradient(0deg, rgba(47, 49, 54, 0), var(--BG-image-set)) !important;
 }
 
 .searchResultsWrap-2DKFzt .searchResult-3pzFAB:after {
-    background-image: linear-gradient(180deg, rgba(47, 49, 54, 0), var(--primary-color)) !important;
+    background-image: linear-gradient(180deg, rgba(47, 49, 54, 0), var(--BG-image-set)) !important;
 }
 
 .searchResultsWrap-2DKFzt .searchResult-3pzFAB .searchResultMessage-2VxO12.hit-NLlWXA {
-    border: 2px solid var(--quaternary-color) !important;
+    border: 2px solid var(--main-color) !important;
 }
 
 .searchResultsWrap-2DKFzt .searchResult-3pzFAB .hit-NLlWXA {
-    background-color: var(--quaternary-color) !important;
-    box-shadow: 0 0 10px 6px var(--primary-color) !important;
+    background-color: var(--BG-image-set);
+    box-shadow: 0 0 10px 6px var(--main-color) !important;
 }
 
 .searchResultsWrap-2DKFzt .searchResult-3pzFAB .hit-NLlWXA:hover {
-    border: 2px solid var(--main-color) !important;
+    border: 2px solid var(--BG-image-set) !important;
 }
 
 .searchResultsWrap-2DKFzt .channelSeparator-1X1FuH:before {
@@ -2246,14 +2341,14 @@ pre {
 }
 
 .searchResultsWrap-2DKFzt .channelSeparator-1X1FuH .channelName-1QajIf {
-    background-color: var(--main-color) !important;
+    background-color: var(--BG-image-set);
     color: #fff;
     margin-left: -10px;
     padding: 8px 8px 8px 6px;
 }
 
 .searchResultsWrap-2DKFzt .actionButtons-14P9IC .jumpButton-Ia2hRJ {
-    background-color: var(--main-color) !important;
+    background-color: var(--BG-image-set);
     color: #fff;
     padding: 1px 7px 3px 6px;
 }
@@ -2261,7 +2356,7 @@ pre {
 .calendarPicker-2yf6Ci .react-datepicker,
 .calendarPicker-2yf6Ci .react-datepicker__header {
     border-radius: 0px !important;
-    background: var(--primary-color) !important;
+    background-color: var(--BG-image-set);
 }
 
 .calendarPicker-2yf6Ci .react-datepicker__current-month,
@@ -2269,27 +2364,27 @@ pre {
 .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next,
 .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous,
 .calendarPicker-2yf6Ci .react-datepicker__day {
-    border-color: var(--tertiary-color) !important;
+    border-color: var(--BG-image-set) !important;
 }
 
 .calendarPicker-2yf6Ci .react-datepicker__day {
-    background: var(--secondary-color) !important;
+    background-color: var(--BG-image-set);
 }
 
 .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled,
 .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover {
-    background: var(--quaternary-color) !important;
+    background-color: var(--BG-image-set);
 }
 
 .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover,
 .calendarPicker-2yf6Ci .react-datepicker__day:hover,
 .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z:hover {
-    background-color: var(--hover-color) !important;
+    background-color: var(--BG-image-set);
 }
 
 .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:after,
 .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z {
-    background-color: var(--main-color) !important;
+    background-color: var(--BG-image-set);
 }
 
 /* 8.p. Video Calling */
@@ -2546,11 +2641,11 @@ pre {
 
 .root-1bFE0x,
 .searchBox-3Y2Vi7 {
-    background-color: var(--quaternary-color) !important;
+    background-color: var(--BG-image-set) !important;
 }
 
 .searchBox-3Y2Vi7 .input-cIJ7To {
-    background-color: transparent !important;
+    background-color: var(--BG-image-set) !important;
 }
 
 .section-7tu4tu:not(:last-child) {
@@ -2562,7 +2657,7 @@ pre {
 }
 
 .dot-22bIa4 {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 #app-mount .outer-2IVh5n,
@@ -2588,7 +2683,7 @@ pre {
 }
 
 .cap-HS8vCE {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 #app-mount .searchOption-8nCYo-.selected-1r_nkg {
@@ -2606,7 +2701,7 @@ pre {
 }
 
 .buttonColor-1agP3J {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .buttonColor-1agP3J:hover {
@@ -2834,7 +2929,7 @@ pre {
 }
 
 #app-mount .emptySearchResults-1ba__I {
-    background: transparent;
+    background-color: var(--BG-image-set);
 }
 
 .searchHelpText-19imBp {
@@ -2854,7 +2949,7 @@ pre {
 }
 
 #app-mount .activeButton-1BJAiN {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     transition: background 200ms ease-in-out;
 }
 
@@ -3006,7 +3101,7 @@ pre {
 }
 
 .avatarUploaderInner-3UNxY3 {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .wrapper-3t9DeA foreignObject + svg rect + svg.dots-3Bkt3k g {
@@ -3062,6 +3157,11 @@ pre {
 #permissions-modal-wrapper .role-side,
 .sidebar-2K8pFh {
     box-shadow: 0 2px 20px var(--shadow) !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .sidebar-2K8pFh {
@@ -3236,6 +3336,7 @@ pre {
 .rolesList-22qj2L::-webkit-scrollbar {
     height: 8px;
     width: 12px;
+    background-color: var(--main-color);
 }
 
 
@@ -3352,7 +3453,7 @@ pre {
 }
 
 .emojiPicker-3m1S-j .header-1nkwgG .searchBar-2pWH0_ {
-    background: var(--BG-image-set) !important;
+    background-color: var(--BG-image-set);
     opacity: 0.8
 }
 
@@ -3473,7 +3574,7 @@ pre {
 }
 
 .searchBar-2_Yu-C.searchBarLight-1NxoDG .searchBarInner-1_Tg2R {
-    background: var(--BG-image-set) !important;
+    background-color: var(--BG-image-set);
     color: var(--white10) !important
 }
 
@@ -3644,6 +3745,11 @@ pre {
 .rolesList-22qj2L {
     max-height: 14vh;
     overflow-y: auto;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .role-2irmRk {
@@ -3660,6 +3766,7 @@ pre {
     font-weight: 400;
     text-transform: uppercase;
     overflow: visible;
+
 }
 
 .role-2irmRk::before {
@@ -3676,6 +3783,11 @@ pre {
 
 .roleName-32vpEy {
     margin: 0 4px;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .roleCircleButton-377y0l {
@@ -3723,7 +3835,11 @@ pre {
 }
 
 .note-3kmerW textarea:focus {
-    background-color: var(--BG-image) !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .quickMessage-1yeL4E {
@@ -3781,12 +3897,16 @@ pre {
 
 .searchPopout-1vUlP3,
 .container-3ayLPN {
-    background-color: var(--primary-color) !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     border-radius: 0 !important;
     border: none !important;
-    border-left: 2px solid var(--main-color) !important;
-    border-right: 2px solid var(--main-color) !important;
-    border-bottom: 2px solid var(--main-color) !important;
+    border-left: 2px solid var(--BG-image-set) !important;
+    border-right: 2px solid var(--BG-image-set) !important;
+    border-bottom: 2px solid var(--BG-image-set) !important;
 }
 
 .searchPopout-1vUlP3 .resultsGroup-r_nuzN,
@@ -3795,6 +3915,7 @@ pre {
     animation: popoutanim 300ms cubic-bezier(.4, 0, 0, 1), opacity 100ms ease 100ms backwards;
     transform-origin: 50% -10%;
     box-sizing: content-box;
+    background-color: var(--BG-image-set);
 }
 
 .resultsGroup-r_nuzN .header-2N-gMV {
@@ -3809,7 +3930,7 @@ pre {
 
 .option-96V44q,
 .result-2S5Awv {
-    border-left: 2px solid transparent;
+    border-left: 2px solid var(--BG-image-set);
     border-radius: 0px;
 }
 
@@ -3825,7 +3946,7 @@ pre {
 .option-96V44q.selected-rZcOL-,
 .result-2S5Awv.focused-1Yu0L3 {
     background-color: var(--quaternary-color) !important;
-    border-color: var(--hover-color);
+    border-color: var(--BG-image-set);
 }
 
 .option-96V44q.searchQuery-1B7rtx.selected-rZcOL-,
@@ -3940,7 +4061,7 @@ pre {
 
 .searchBar-1MOL6S,
 #app-mount .container-2XeR5Z {
-    background-color: var(--quaternary-color) !important;
+    background-color: var(--BG-image-set) !important;
 }
 
 .selectableItem-1MP3MQ:hover {
@@ -3952,39 +4073,44 @@ pre {
 }
 
 /* 15.h. Group DM Invite Popout */
-.modal-3HD5ck {
-
-}
+.modal-3HD5ck {}
 
 .modal-3HD5ck.popout-3Nppv9 {
     border-right: 2px solid var(--main-color);
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
     border-radius: 0px;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-.modal-3HD5ck .searchBar-2_Yu-C {
-
-}
+.modal-3HD5ck .searchBar-2_Yu-C {}
 
 .friendSelected--wQP3f {
-    background-color: var(--quaternary-color) !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-.modal-3HD5ck .checked-3_4uQ9 {
+.modal-3HD5ck .checked-3_4uQ9 {}
 
-}
-
-.search-bar-tag {
-   
-}
+.search-bar-tag {}
 
 .modal-3HD5ck .checked-3_4uQ9::after {
     content: '';
     position: absolute;
     height: 100%;
     width: 24px;
-    background-color: #eee;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     -webkit-mask: url("https://monstrousdev.github.io/themes/assets/svgs/check.svg");
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
@@ -3994,12 +4120,24 @@ pre {
 .modal-3HD5ck .checked-3_4uQ9 svg,
 .modal-3HD5ck .checked-3_4uQ9 g {
     display: none;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.popout-103y-5 {
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /* 15.i. Tooltips */
 #app-mount .tooltip-2QfLtc {
     border-radius: 0px !important;
-    background: var(--main-color);
+    background: var(--BG-image-set);
 }
 
 #app-mount .tooltipRed-8-9NeP {
@@ -4087,19 +4225,27 @@ pre {
 /* 15.n. Overflow Roles Popout */
 .overflowRolesPopout-140n9i,
 .overflowRolesPopoutArrow-2O66oH {
-    background-color: var(--primary-color) !important;
+    background-color: var(--main-color) !important;
 }
 
 /* 15.o. Dropdown Menu Popout */
 .popout-2sKjHu,
 #app-mount .css-181m2lf-menu {
-    background-color: var(--quaternary-color) !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     border-color: var(--quaternary-color) !important;
 }
 
 .optionActive-KkAdqq,
 #app-mount .css-12o7ek3-option {
-    background-color: var(--main-color) !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .optionLabel-2CkCZx,
@@ -4109,13 +4255,21 @@ pre {
 
 .optionNormal-12VR9V:hover,
 #app-mount .css-1gnr91b-option {
-    background: transparent !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     border-color: var(--hover-color) !important
 }
 
 /* 15.p. DM Call Region Select Popout */
 .quickSelectPopout-X1hvgV {
-    background-color: var(--primary-color) !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .quickSelectPopoutOption-opKBx9 {
@@ -4124,13 +4278,17 @@ pre {
 }
 
 .quickSelectPopoutOption-opKBx9:hover {
-    background-color: transparent !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     border-color: var(--main-color);
 }
 
 .check-2by_h9 {
     background-image: none !important;
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     -webkit-mask-image: url(https://monstrousdev.github.io/themes/assets/svgs/check.svg);
     -webkit-mask-size: 18px;
     -webkit-mask-position: center;
@@ -4172,7 +4330,11 @@ pre {
 }
 
 .contextMenu-HLZMGh .itemBase-tz5SeC {
-    background: transparent !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     border-radius: 0px;
     transition: all 80ms ease;
     cursor: pointer;
@@ -4229,17 +4391,17 @@ pre {
 }
 
 /* 16.b. Status Picker */
+/* Status Picker */
 .popout-3sVMXz.popoutTop-3uu9vG,
 .popout-3sVMXz.popoutTopLeft-b5Eb3O {
     overflow: visible !important;
-    
 }
 
 .popout-3sVMXz.popoutTopLeft-b5Eb3O {
     margin-left: -10px;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 {
     animation: show-status 300ms linear;
     border: none;
     width: 240px;
@@ -4253,7 +4415,7 @@ pre {
     border-radius: 0;
 }
 
-.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 {
+.layer-v9HyYc[style*="; bottom: 82px;"][style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 {
     position: fixed;
     left: -10px !important;
     bottom: -5px !important;
@@ -4263,15 +4425,15 @@ pre {
     height: 100px !important;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 .statusIconText-3b4TkH div {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 .statusIconText-3b4TkH div {
     color: transparent;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 .helper-2c73HK {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 .helper-2c73HK {
     display: none;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 {
     position: relative;
     display: inline-block;
     width: 60px;
@@ -4284,24 +4446,24 @@ pre {
     margin: 0;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(3) {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(3) {
     animation-delay: 100ms !important;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(4) {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(4) {
     animation-delay: 200ms !important;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(5) {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(5) {
     animation-delay: 300ms !important;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover {
     background: transparent !important;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(7) {
-    background-color: var(--main-color);
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(7) {
+    background-color: var(--primary-color);
     width: 100%;
     transition: color 200ms ease-in;
     z-index: -1;
@@ -4321,17 +4483,17 @@ pre {
     justify-content: center;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(7):hover {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(7):hover {
     background-color: var(--primary-color) !important;
-    color: var(--main-color);
+    color: rgb(var(--BG-gradient-one));
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover .statusIconText-3b4TkH {
-    transform: scale(1.9);
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover .statusIconText-3b4TkH {
+    transform: scale(1.5);
     transition: all 200ms ease-in-out;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 .statusIconText-3b4TkH {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 .statusIconText-3b4TkH {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -4345,38 +4507,38 @@ pre {
     transition: all 200ms ease-in-out;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(1) .statusIconText-3b4TkH {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(1) .statusIconText-3b4TkH {
     background-color: var(--online);
-    border-radius: 0;
+    border-radius: 50px;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(3) .statusIconText-3b4TkH {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(3) .statusIconText-3b4TkH {
     background-color: var(--idle);
-    border-radius: 0;
+    border-radius: 50px;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(4) .statusIconText-3b4TkH {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(4) .statusIconText-3b4TkH {
     background-color: var(--dnd);
-    border-radius: 0;
+    border-radius: 50px;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(5) .statusIconText-3b4TkH {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(5) .statusIconText-3b4TkH {
     background-color: var(--invisible);
-    border-radius: 0;
+    border-radius: 50px;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover [class*="status"].online-2S838R:after,
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover [class*="status"].idle-3DEnRT:after,
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover [class*="status"].dnd-1_xrcq:after,
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover [class*="status"].invisible-1kp8Z0:after {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover [class*="status"].online-2S838R:after,
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover [class*="status"].idle-3DEnRT:after,
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover [class*="status"].dnd-1_xrcq:after,
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover [class*="status"].invisible-1kp8Z0:after {
     opacity: 1;
     visibility: visible;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 [class*="status"].online-2S838R:after,
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 [class*="status"].idle-3DEnRT:after,
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 [class*="status"].dnd-1_xrcq:after,
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 [class*="status"].invisible-1kp8Z0:after {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 [class*="status"].online-2S838R:after,
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 [class*="status"].idle-3DEnRT:after,
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 [class*="status"].dnd-1_xrcq:after,
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 [class*="status"].invisible-1kp8Z0:after {
     content: " ";
     display: block;
     position: absolute;
@@ -4395,7 +4557,7 @@ pre {
     transition: all 200ms ease-in-out;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 .statusIconText-3b4TkH:after {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 .statusIconText-3b4TkH:after {
     content: "";
     position: absolute;
     top: 0;
@@ -4409,27 +4571,27 @@ pre {
     transition: all 200ms ease-in-out;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover .statusIconText-3b4TkH:after {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:hover .statusIconText-3b4TkH:after {
     opacity: 1;
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(1) .statusIconText-3b4TkH:after {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(1) .statusIconText-3b4TkH:after {
     background-image: url(https://monstrousdev.github.io/themes/assets/status/online.svg);
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(3) .statusIconText-3b4TkH:after {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(3) .statusIconText-3b4TkH:after {
     background-image: url(https://monstrousdev.github.io/themes/assets/status/idle.svg);
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(4) .statusIconText-3b4TkH:after {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(4) .statusIconText-3b4TkH:after {
     background-image: url(https://monstrousdev.github.io/themes/assets/status/dnd.svg);
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(5) .statusIconText-3b4TkH:after {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6:nth-child(5) .statusIconText-3b4TkH:after {
     background-image: url(https://monstrousdev.github.io/themes/assets/status/invisi.svg);
 }
 
-.layer-v9HyYc[style*="; bottom: 57px"][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 .statusIconText-3b4TkH .status-oxiHuE {
+.layer-v9HyYc[style*="; bottom: "][id*="popout_"] .menu-Sp6bN1 .itemBase-1Qj4z6 .statusIconText-3b4TkH .status-oxiHuE {
     position: absolute !important;
     top: 0;
     left: 0;
@@ -4438,6 +4600,12 @@ pre {
     margin-right: 0px !important;
     transition: all 200ms ease-in-out;
 }
+
+.menu-Sp6bN1 .separator-2zcjq8 {
+    display: none;
+}
+
+/* Status Picker */
 
 /* 16.c. Message Menu */
 .container-3cGP6G {
@@ -4475,7 +4643,7 @@ pre {
 }
 
 .bd-modal-wrapper .footer button {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .bd-modal-wrapper .footer button:hover {
@@ -4576,14 +4744,14 @@ pre {
 
 .theme-light .slide-2pHaq5,
 .theme-dark .slide-2pHaq5 {
-    background-color: transparent
+    background-color: var(--BG-image-set);
 }
 
 .theme-dark .create-3jownz .actionIcon-2IISM_,
 .theme-light .create-3jownz .actionIcon-2IISM_ {
     position: relative;
     background-image: none;
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     -webkit-mask: url(https://monstrousdev.github.io/themes/assets/svgs/add-btn.svg) center/112px 78px no-repeat;
 }
 
@@ -4606,7 +4774,7 @@ pre {
 }
 
 .regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3:hover {
-    background-color: var(--primary-color) !important;
+    background-color: var(--BG-image-set) !important;
 }
 
 .theme-dark .regionSelect-3lf4eE:hover .regionSelectInner-24f4Ce,
@@ -4618,12 +4786,12 @@ pre {
 
 .theme-dark .regionSelect-3lf4eE:hover button,
 .theme-light .regionSelect-3lf4eE:hover button {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .theme-dark .action-1lSjCi,
 .theme-light .action-1lSjCi {
-    background: var(--tertiary-color);
+    background: var(--BG-image-set);
     border-color: var(--secondary-color);
 }
 
@@ -4631,7 +4799,7 @@ pre {
 .form.deprecated .btn-primary,
 .theme-dark .actionButton-2PeQbJ,
 .theme-light .actionButton-2PeQbJ {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .form-deprecated .btn-primary:hover,
@@ -4653,7 +4821,7 @@ pre {
 }
 
 .avatar-uploader-inner {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     border-color: var(--quaternary-color);
 }
 
@@ -4690,7 +4858,7 @@ pre {
 
 .form-deprecated .btn-default,
 .form.deprecated .btn-default {
-    background-color: transparent;
+    background-color: var(--BG-image-set);
     border-color: var(--tertiary-color);
 }
 
@@ -4834,7 +5002,7 @@ pre {
 }
 
 .selectorButtonSelected-1j4DmC {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .item-1TLUig:hover {
@@ -4985,17 +5153,17 @@ pre {
 #app-mount .subscriptionDuration-3WXA_o,
 #app-mount .tierPill-1yRO48,
 #app-mount .info-3UT5_W {
-    background-color: var(--quaternary-color) !important;
+    background-color: var(--BG-image-set) !important;
 }
 
 #app-mount .tierMarker-5HkGJ_[style*="linear-gradient(to right, rgb(32, 34, 37), rgb(32, 34, 37))"] {
-    background-image: none !important;
+    background-image: var(--BG-image-set) !important;
 }
 
 #app-mount .info-3NKfPL,
 #app-mount .tierHeaderLocked-1a2opw,
 #app-mount .tierHeaderLocked-1s2JJz {
-    background-color: var(--secondary-color);
+    background-color: var(--BG-image-set);
 }
 
 #app-mount .background-3xPPFc {
@@ -5003,11 +5171,11 @@ pre {
 }
 
 #app-mount .carouselRightGradientEdge-2Z3H8D {
-    background-image: linear-gradient(270deg, var(--quaternary-color), transparent);
+    background-image: linear-gradient(270deg, var(--quaternary-color));
 }
 
 #app-mount .carouselLeftGradientEdge-3P4spl {
-    background-image: linear-gradient(90deg, var(--quaternary-color), transparent);
+    background-image: linear-gradient(90deg, var(--quaternary-color));
 }
 
 /* 18. Login Page */
@@ -5270,7 +5438,7 @@ pre {
 .mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN,
 .theme-dark .categoryFadeBlurple-1j72_A,
 .theme-light .categoryFadeBlurple-1j72_A {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
 }
 
 .content-N9xlZF {
@@ -5393,7 +5561,7 @@ pre {
 }
 
 .symbol-3ffeCr {
-    background-color: var(--main-color);
+    background-color: var(--BG-image-set);
     -webkit-mask-image: url(https://monstrousdev.github.io/themes/assets/svgs/demon-fill.svg);
     -webkit-mask-position: center;
     -webkit-mask-repeat: no-repeat;
@@ -5444,10 +5612,19 @@ pre {
 
 #permissions-modal-wrapper .role-item {
     border: 1px solid transparent;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 #permissions-modal-wrapper .role-item:hover {
-    background-color: transparent !important;
+    background-color: transparent;
+    background: var(--BG-image-set);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     border-color: var(--hover-color);
 }
 
@@ -5686,11 +5863,11 @@ div.reply-item {
 }
 
 .theme-dark .container-3gCOGc {
-    background-color: var(--bgImage);
+    background-color: var(--BG-image-set);
 }
 
 .theme-light .container-3gCOGc {
-    background-color: var(--bgImage);
+    background-color: var(--BG-image-set);
 }
 
 @import url('http://anti-betterdocs.github.io/BlockBetterDocs/code.css');
@@ -5965,6 +6142,5 @@ div.reply-item {
 }
 
 .theme-dark .container-3gCOGc {
-    background-color: var(--bgImage);
+    background-color: var(--BG-image-set);
 }
-
